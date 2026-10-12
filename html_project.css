@@ -1,0 +1,116 @@
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
+:root {
+    --bg: #0b0b0f;
+    --card: #15151c;
+    --accent: #e63946;
+    --text: #e6e6e6;
+}
+
+#hero h1 {
+    color: var(--accent);
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #3a0e12, #7a1020);
+    color: white;
+    padding: 12px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px var(--accent);
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid var(--accent);
+}
+
+footer a {
+    color: var(--accent);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Regular.ttf');
+    font-weight: 400;
+}
+
+.icon
+{
+    font-size: 1.5rem;
+}
+
+.card i
+{
+    color:  rgb(29, 79, 123);
+    margin-right: 8px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    margin: 0;
+    background: linear-gradient(160deg, #0b0b0f 0%, #2a0a12 50%, #0b0b0f 100%);
+    background-attachment: fixed;
+}
+
+#hero, #about, #skills, #games {
+    padding: 40px 20px;
+}
+
+#hero, #skills {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    border-radius: 10px;
+    border: 1px solid #3a1a1f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    background: var(--card);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--accent);
+}
+
+.card h3{
+    color: var(--accent);
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid var(--accent);
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 24px;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
